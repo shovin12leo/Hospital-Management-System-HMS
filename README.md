@@ -50,7 +50,7 @@ Ensure you have the following installed:
 ### 2️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/hospital-management-system.git
+git clone https://github.com/shovin12leo/Hospital-Management-System-HMS-.git
 cd hospital-management-system
 ```
 
