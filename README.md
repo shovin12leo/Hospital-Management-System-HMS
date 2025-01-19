@@ -78,34 +78,39 @@ ng serve     # Start the frontend (runs on localhost:4200)
 
 ### User Authentication
 
-- `POST /api/auth/signup` – User registration
-- `POST /api/auth/login` – User login
+- `POST [/api/auth/signup](http://localhost:5000/api/auth/signup)` – User registration
+- `POST [/api/auth/login](http://localhost:5000/api/auth/login)` – User login
 
 ### Doctor Management
 
-- `POST /api/doctors` – Add a new doctor
-- `GET /api/doctors` – Get list of doctors
-- `PUT /api/doctors/:id` – Update doctor details
-- `DELETE /api/doctors/:id` – Remove a doctor
+- `POST [/api/doctors]((http://localhost:5000/api/doctors/add))` – Add a new doctor
+- `GET [/api/doctors](http://localhost:5000/api/doctors/all)` – Get list of doctors
+- `PUT [/api/doctors/:id](http://localhost:5000/api/doctors/update/:id)` – Update doctor details
+- `DELETE [/api/doctors/:id](http://localhost:5000/api/doctors/delete/:id)` – Remove a doctor
 
 ### Patient Records
 
-- `POST /api/patients` – Add a new patient
-- `GET /api/patients` – View all patients
-- `PUT /api/patients/:id` – Update patient info
-- `DELETE /api/patients/:id` – Delete patient record
+- `POST [/api/patients](http://localhost:5000/api/patients/add)` – Add a new patient
+- `GET [/api/patients](http://localhost:5000/api/patients/all)` – View all patients
+- `GET [/api/patients](http://localhost:5000/api/patients/:id)`- View By patients ID
+- `PUT [/api/patients/:id](http://localhost:5000/api/patients/update/:id)` – Update patient info
+- `DELETE [/api/patients/:id](http://localhost:5000/api/patients/delete/:id)` – Delete patient record
 
 ### Appointments
 
-- `POST /api/appointments` – Book an appointment
-- `GET /api/appointments` – View all appointments
-- `PUT /api/appointments/:id` – Update appointment
-- `DELETE /api/appointments/:id` – Cancel appointment
+- `POST [/api/appointments](http://localhost:5000/api/appointments/book)` – Book an appointment
+- `GET [/api/appointments](http://localhost:5000/api/appointments/all)` – View all appointments
+- `GET [/api/appointments]((http://localhost:5000/api/appointments/patient/:id))` - View By appointments ID
+- `PUT [/api/appointments/:id](http://localhost:5000/api/appointments/update/:id)` – Update appointment
+- `DELETE [/api/appointments/:id](http://localhost:5000/api/appointments/delete/:id)` – Cancel appointment
 
 ### Billing
 
-- `POST /api/billing` – Generate invoice
-- `GET /api/billing/:id` – View invoice details
+- `POST [/api/billing](http://localhost:5000/api/billings/generate)` – Generate invoice
+- `GET [/api/billing/:id](http://localhost:5000/api/billings/patient/:id)` – View invoice details By ID
+-  `GET [/api/billing/:id]((http://localhost:5000/api/billings/all))` - View All invoice details
+-  `GET [/api/billing/:id] ((http://localhost:5000/api/billings/update/:id))` - Update Billing Payment Status
+-  `DELETE [/api/billing](http://localhost:5000/api/billings/delete/:id)`- Delete Billing Record 
 
 ---
 
