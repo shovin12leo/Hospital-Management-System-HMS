@@ -58,7 +58,9 @@ cd hospital-management-system-HMS
 
 ```bash
 cd backend
-npm install  # Install dependencies
+npm init -y  #Initialize a Node.js project
+
+npm install express mongoose cors dotenv   # Install dependencies
 npm start    # Start the backend server (runs on localhost:5000)
 ```
 
