@@ -51,7 +51,7 @@ Ensure you have the following installed:
 
 ```bash
 git clone https://github.com/shovin12leo/Hospital-Management-System-HMS-.git
-cd hospital-management-system
+cd hospital-management-system-HMS
 ```
 
 ### 3️⃣ Backend Setup (Node.js + Express)
