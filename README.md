@@ -5,7 +5,7 @@ The Hospital Management System (HMS) will include essential features like patien
 
 ## 📌 Project Overview
 
-The **Hospital Management System (HMS)** is a full-stack web application built using **Node.js, Angular 15, and MongoDB**. It provides a streamlined system for managing hospital operations, including **patient records, doctor management, appointments, and billing**.
+The **Hospital Management System (HMS)** is a full-stack web application built using **Node.js,  and MongoDB**. It provides a streamlined system for managing hospital operations, including **patient records, doctor management, appointments, and billing**.
 
 ## 🚀 Tech Stack
 
