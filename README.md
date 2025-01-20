@@ -9,11 +9,10 @@ The **Hospital Management System (HMS)** is a full-stack web application built u
 
 ## 🚀 Tech Stack
 
-- **Frontend:** Angular 15
 - **Backend:** Node.js with Express.js
 - **Database:** MongoDB (MongoDB Compass for GUI)
 - **API Testing:** Postman
-- **Hosting:** Runs locally on `localhost:4200` (Angular) and `localhost:5000` (Node.js API)
+- **Hosting:** Runs locally on  `localhost:5000` (Node.js API)
 
 ---
 
@@ -45,7 +44,7 @@ Ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (LTS version recommended)
 - [MongoDB](https://www.mongodb.com/try/download/community) (Use MongoDB Compass for easy management)
-- [Angular CLI](https://angular.io/cli)
+
 
 ### 2️⃣ Clone the Repository
 
@@ -64,13 +63,7 @@ npm install express mongoose cors dotenv   # Install dependencies
 npm start    # Start the backend server (runs on localhost:5000)
 ```
 
-### 4️⃣ Frontend Setup (Angular 15)
 
-```bash
-cd frontend
-npm install  # Install dependencies
-ng serve     # Start the frontend (runs on localhost:4200)
-```
 
 ---
 
