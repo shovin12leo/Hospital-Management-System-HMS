@@ -60,7 +60,7 @@ cd backend
 npm init -y  #Initialize a Node.js project
 
 npm install express mongoose cors dotenv   # Install dependencies
-npm start    # Start the backend server (runs on localhost:5000)
+node server.js   # Start the backend server (runs on localhost:5000)
 ```
 
 
