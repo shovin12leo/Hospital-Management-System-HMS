@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Login</h2>
+    <form ng-submit="login()">
+        <label>Email:</label>
+        <input type="email" ng-model="user.email" required />
+
+        <label>Password:</label>
+        <input type="password" ng-model="user.password" required />
+
+        <button type="submit">Login</button>
+        <p class="error" ng-show="errorMessage">{{ errorMessage }}</p>
+    </form>
+    <p>Don't have an account? <a href="./signup.html">Sign up</a></p>
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Appointments Management</h2>
+    <p class="error" ng-show="errorMessage">{{ errorMessage }}</p>
+
+    <!-- Book Appointment Form -->
+    <h3>Book New Appointment</h3>
+    <form ng-submit="bookAppointment()">
+        <input type="text" ng-model="newAppointment.patientId" placeholder="Patient ID" required>
+        <input type="text" ng-model="newAppointment.doctorId" placeholder="Doctor ID" required>
+        <input type="date" ng-model="newAppointment.appointmentDate" required>
+        <textarea ng-model="newAppointment.notes" placeholder="Notes"></textarea>
+        <button type="submit">Book Appointment</button>
+    </form>
+
+    <!-- List of Appointments -->
+    <h3>Appointment List</h3>
+    <ul>
+        <li ng-repeat="appointment in appointments">
+            {{ appointment.patient.name }} with {{ appointment.doctor.name }} on {{ appointment.appointmentDate }}
+            <button ng-click="deleteAppointment(appointment._id)">Cancel</button>
+        </li>
+    </ul>
+</div>

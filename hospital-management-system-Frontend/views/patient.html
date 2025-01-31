@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Patients Management</h2>
+    <p class="error" ng-show="errorMessage">{{ errorMessage }}</p>
+
+    <!-- Add Patient Form -->
+    <h3>Add New Patient</h3>
+    <form ng-submit="addPatient()">
+        <input type="text" ng-model="newPatient.name" placeholder="Name" required>
+        <input type="number" ng-model="newPatient.age" placeholder="Age" required>
+        <input type="text" ng-model="newPatient.gender" placeholder="Gender" required>
+        <input type="text" ng-model="newPatient.contact" placeholder="Contact" required>
+        <input type="email" ng-model="newPatient.email" placeholder="Email" required>
+        <input type="text" ng-model="newPatient.address" placeholder="Address" required>
+        <button type="submit">Add Patient</button>
+    </form>
+
+    <!-- List of Patients -->
+    <h3>Patient List</h3>
+    <ul>
+        <li ng-repeat="patient in patients">
+            {{ patient.name }} - {{ patient.age }} years
+            <button ng-click="deletePatient(patient._id)">Delete</button>
+        </li>
+    </ul>
+</div>
