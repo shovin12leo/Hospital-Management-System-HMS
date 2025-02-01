@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Billing Management</h2>
+    <p class="error" ng-show="errorMessage">{{ errorMessage }}</p>
+
+    <!-- Generate Bill Form -->
+    <h3>Generate New Bill</h3>
+    <form ng-submit="generateBill()">
+        <input type="text" ng-model="newBill.patientId" placeholder="Patient ID" required>
+        <input type="text" ng-model="newBill.doctorId" placeholder="Doctor ID" required>
+        <input type="text" ng-model="newBill.appointmentId" placeholder="Appointment ID" required>
+        <input type="number" ng-model="newBill.totalAmount" placeholder="Total Amount" required>
+        <button type="submit">Generate Bill</button>
+    </form>
+
+    <!-- List of Bills -->
+    <h3>Billing Records</h3>
+    <ul>
+        <li ng-repeat="bill in bills">
+            Patient: {{ bill.patient.name }}, Doctor: {{ bill.doctor.name }}, Amount: {{ bill.totalAmount }}
+            <button ng-click="deleteBill(bill._id)">Delete</button>
+        </li>
+    </ul>
+</div>
